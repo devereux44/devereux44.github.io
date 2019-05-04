@@ -1,31 +1,78 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Terry Devereux's Bio</title>
+  <title>NW Weather Website</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<h1> About Me:</h1>
-<h4>I am currently a Strategic Sales Project Manager for West Unified Communications Services (formally InterCall) specializing in Data Analytics. 
-  My responsibilities include assessing revenue trends, sales performance, and operational efficiency. 
-  Before moving to the Project Manager role, I worked as an Account Executive at West UC (InterCall), supporting Enterprise and Mid Market customers. 
+  <nav class="navbar navbar-expand-sm bg-white navbar-light justify-content-end">
+    <a class="navbar-brand" href="C:\Users\dever\Desktop\devereux44.github.io\index.html">Lattitude</a>
 
-  Prior to working at West UC, I attended the University of Colorado - Boulder and earned degrees In Finance ('12) and Advertising ('12).</h4>
-
-  <h1> Data Science:</h1>
-
-  <h4> I am currently attending Northwestern's Data Science Bootcamp to further my knokwledge in Data Science and Analytics.</h4>
-<h2>Skills Learned:</h2>
-<h4>
-    <li>Python</li>
-    <li>SQL</li>
-    <li>Tableau</li>
-    <li>HTML/CSS/JavaScript</li>   
-</h4>
-<h2>Helpful Links:</h2>
-<h3><a target="_blank" href=https://www.linkedin.com/in/terry-devereux-a5384a3a/>LinkedIn</a></h3>
-<h3><a target="_blank" href=https://github.com/devereux44/>GitHub</a></h3>
+    <div class="btn ml-auto mr-1" class="collapse navbar" id="navbarSupportedContent">
+        <ul class="navbar-nav text-right">
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Lattitude.html">Lat vs. Temp</a>
+                                <a class="dropdown-item" href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Humidity.html">Lat vs. Humidity</a>
+                                <a class="dropdown-item" href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Cloudiness.html">Lat vs. Cloudiness</a>
+                                <a class="dropdown-item" href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Wind_Speed.html">Lat vs. Wind Speed</a>
+                        </div>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href=C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Comparisons.html>Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="C:\Users\dever\Desktop\devereux44.github.io\Data.html">Data</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="p-3 mb-2 bg-light text-dark">
+<div class="container">
+    <div class="row">
+      <div class="col-md-8">
+          <div class="p-3 mb-2 bg-white text-dark">
+            <h1>Summary: Lattitude vs. X</h1>
+            
+            <img float=left src="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Resources\assets\images\Fig1.png"
+            class="img-fluid" alt="Responsive image" width=300px align=left padding=20px>
+            <p>Temperature rises as latitude approaches 0. Conversly, temperature declines as latitude approaches -90 / 90 degrees. However, there is less data in the Southern Hemisphere. This is likely because there is less land mass in the Southern Hemisphere 2) There is no apparent correlation between cloudiness and latitude, however, most cloudiness appears to fall in even bands. It appears more common to describe the sky as 80% cloudy as opposed to 83% cloudy. 3) Most wind speeds are under 20mph, but there is a higher occurance of wind speeds above 20 mph in the far nothern cities.
+            </p> 
+        
+            </div>
+        </div> 
+        <div class="col-md-4">
+                <div class="p-3 mb-2 bg-white text-dark">
+                        <h2>Visualizations</h2>
+                        <a href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Lattitude.html">
+                            <img src="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Resources\assets\images\Fig1.png"
+                        class="img-thumbnail" class="rounded float-left" width=49%>
+                        </a>
+                        <a href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Humidity.html">
+                        <img src="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Resources\assets\images\Fig2.png"
+                        class="img-thumbnail" class="rounded float-left" width=49%>
+                        </a>
+                        <a href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Cloudiness.html">
+                        <img src="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Resources\assets\images\Fig3.png"
+                        class="img-thumbnail" class="rounded float-right" width=49%>
+                        </a>
+                        <a href="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Pages\Wind_Speed.html">
+                        <img src="C:\Users\dever\NUCHI201902DATA1\Homework\11-Web\Instructions\Resources\assets\images\Fig4.png"
+                        class="img-thumbnail" class="rounded float-right" width=49%>
+                        </a>
+                
+                </div>
+         </div> 
+    </div>
+</div>  
 </body>
-
-</html>
